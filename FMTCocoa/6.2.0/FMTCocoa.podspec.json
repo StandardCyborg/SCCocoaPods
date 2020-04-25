@@ -1,0 +1,35 @@
+{
+  "name": "FMTCocoa",
+  "version": "6.2.0",
+  "summary": "FMT",
+  "homepage": "https://github.com/StandardCyborg/FMTCocoa",
+  "license": "Apache 2, MIT-like",
+  "authors": {
+    "FMTCocoa": "paul@standardcyborg.com",
+	"fmt": "https://fmt.dev/"
+  },
+  "cocoapods_version": ">= 1.0",
+  "source": {
+    "git": "git@github.com:StandardCyborg/FMTCocoa.git",
+    "tag": "6.2.0",
+	"submodules": true
+  },
+  "public_header_files": [
+    "fmt_root/include/fmt/*.h"
+  ],
+  "source_files": [
+    "fmt_root/include/fmt/*.h"
+  ],
+  "header_mappings_dir": "fmt_root/include",
+  "platforms": {
+    "ios": "7.0",
+    "osx": "10.9",
+    "tvos": "9.0",
+    "watchos": "2.0"
+  },
+  "pod_target_xcconfig": {
+    "USE_HEADERMAP": "NO",
+    "ALWAYS_SEARCH_USER_PATHS": "NO",
+    "GCC_PREPROCESSOR_DEFINITIONS": "\"$(inherited)\" \"FMT_HEADER_ONLY=1\" "
+  }
+}
