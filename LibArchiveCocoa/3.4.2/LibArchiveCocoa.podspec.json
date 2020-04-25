@@ -1,0 +1,37 @@
+{
+  "name": "LibArchiveCocoa",
+  "version": "3.4.2",
+  "summary": "LibArchive",
+  "homepage": "https://github.com/StandardCyborg/LibArchiveCocoa",
+  "license": "Apache 2, BSD-like",
+  "authors": {
+    "LibArchiveCocoa": "paul@standardcyborg.com",
+    "LibArchive contributors": "https://groups.google.com/group/libarchive-discuss"
+  },
+  "cocoapods_version": ">= 1.0",
+  "source": {
+    "git": "git@github.com:StandardCyborg/LibArchiveCocoa",
+    "tag": "v3.4.2",
+    "submodules": true
+  },
+  "public_header_files": [
+    "config.h",
+    "libarchive/libarchive/*.h"
+  ],
+  "source_files": [
+    "config.h",
+    "libarchive/libarchive/*.{h,c}"
+  ],
+  "exclude_files": [
+    "libarchive/libarchive/*.3",
+    "libarchive/libarchive/test/*"
+  ],
+  "platforms": {
+    "ios": "7.0",
+    "osx": "10.15"
+  },
+  "compiler_flags": [
+    "-DHAVE_CONFIG_H=1"
+  ],
+  "libraries": ["z", "bz2"]
+}
