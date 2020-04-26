@@ -27,7 +27,10 @@
     "tvos": "9.0",
     "watchos": "2.0"
   },
-  "compiler_flags": [
-    "-FMT_HEADER_ONLY=1"
-  ]
+  "pod_target_xcconfig": {
+    "OTHER_CPLUSPLUSFLAGS": "$(inherited) -DFMT_HEADER_ONLY=1"
+  },
+  "user_target_xcconfig": {
+    "OTHER_CPLUSPLUSFLAGS": "$(inherited) -DFMT_HEADER_ONLY=1"
+  }
 }
