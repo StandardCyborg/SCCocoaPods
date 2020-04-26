@@ -27,12 +27,7 @@
     "tvos": "9.0",
     "watchos": "2.0"
   },
-  "pod_target_xcconfig": {
-    "USE_HEADERMAP": "NO",
-    "ALWAYS_SEARCH_USER_PATHS": "NO",
-    "GCC_PREPROCESSOR_DEFINITIONS": "\"$(inherited)\" \"FMT_HEADER_ONLY=1\" "
-  },
-  "user_target_xcconfig": {
-    "GCC_PREPROCESSOR_DEFINITIONS": "\"$(inherited)\" \"FMT_HEADER_ONLY=1\" "
-  }
+  "compiler_flags": [
+    "-FMT_HEADER_ONLY=1"
+  ]
 }
