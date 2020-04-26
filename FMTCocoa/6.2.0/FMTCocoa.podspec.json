@@ -31,5 +31,8 @@
     "USE_HEADERMAP": "NO",
     "ALWAYS_SEARCH_USER_PATHS": "NO",
     "GCC_PREPROCESSOR_DEFINITIONS": "\"$(inherited)\" \"FMT_HEADER_ONLY=1\" "
+  },
+  "user_target_xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "\"$(inherited)\" \"FMT_HEADER_ONLY=1\" "
   }
 }
