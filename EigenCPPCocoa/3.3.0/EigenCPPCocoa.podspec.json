@@ -20,10 +20,10 @@
   "preserve_paths": [
     "Eigen/*",
     "Eigen/**/*",
-    "unsupported/*"
+    "unsupported/*",
+	"unsupported/**/*"
   ],
-  "header_mappings_dir": "",
   "xcconfig": {
-    "HEADER_SEARCH_PATHS": "$(PODS_ROOT)/eigen"
+    "HEADER_SEARCH_PATHS": "$(inherited) \"$(PODS_ROOT)/EigenCPPCocoa\""
   }
 }
