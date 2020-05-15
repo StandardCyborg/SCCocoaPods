@@ -19,7 +19,8 @@
   "compiler_flags": "-DEIGEN_MPL2_ONLY",
   "preserve_paths": [
     "Eigen/*",
-    "Eigen/**/*"
+    "Eigen/**/*",
+	"unsupported/*"
   ],
   "xcconfig": {
     "HEADER_SEARCH_PATHS": "$(PODS_ROOT)/eigen"
