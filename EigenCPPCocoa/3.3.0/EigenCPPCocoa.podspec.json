@@ -5,12 +5,12 @@
   "homepage": "http://eigen.tuxfamily.org/index.php",
   "license": {
     "type": "MPL 2.0",
-	"text": "See COPYING.MPL2"
+    "text": "See COPYING.MPL2"
   },
   "authors": "Eigen Contributors",
   "platforms": {
     "osx": "10.10",
-	"ios": "8.0"
+    "ios": "8.0"
   },
   "source": {
     "git": "https://gitlab.com/libeigen/eigen.git",
@@ -20,9 +20,9 @@
   "preserve_paths": [
     "Eigen/*",
     "Eigen/**/*",
-	"unsupported/*"
+    "unsupported/*"
   ],
   "xcconfig": {
-    "HEADER_SEARCH_PATHS": "$(PODS_ROOT)/eigen"
+    "HEADER_SEARCH_PATHS": "$(PODS_ROOT)/EigenCPPCocoa"
   }
 }
