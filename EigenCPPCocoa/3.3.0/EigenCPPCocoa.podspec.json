@@ -22,7 +22,8 @@
     "Eigen/**/*",
     "unsupported/*"
   ],
+  "header_mappings_dir": "",
   "xcconfig": {
-    "HEADER_SEARCH_PATHS": "$(PODS_ROOT)/EigenCPPCocoa"
+    "HEADER_SEARCH_PATHS": "$(PODS_ROOT)/eigen"
   }
 }
