@@ -15,11 +15,11 @@
     "submodules": true
   },
   "public_header_files": [
-    "config.h",
+    "config/mac/config.h",
     "libarchive/libarchive/*.h"
   ],
   "source_files": [
-    "config.h",
+    "config/mac/config.h",
     "libarchive/libarchive/*.{h,c}"
   ],
   "exclude_files": [
@@ -27,11 +27,14 @@
     "libarchive/libarchive/test/*"
   ],
   "platforms": {
-    "ios": "7.0",
+    "ios": "13.0",
     "osx": "10.15"
   },
   "compiler_flags": [
     "-DHAVE_CONFIG_H=1"
   ],
-  "libraries": ["z", "bz2"]
+  "libraries": ["z", "bz2"],
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "$(inherited) \"$(PODS_ROOT)/LibArchiveCocoa/config/mac\""
+  }
 }
