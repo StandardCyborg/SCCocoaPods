@@ -15,7 +15,7 @@
     "submodules": true
   },
   "public_header_files": [
-    "config/**/*.h",
+    "config/mac/config.h",
     "libarchive/libarchive/*.h"
   ],
   "source_files": [
@@ -25,6 +25,9 @@
   "exclude_files": [
     "libarchive/libarchive/*.3",
     "libarchive/libarchive/test/*"
+  ],
+  "preserve_paths": [
+    "config/ubuntu/config.h"
   ],
   "platforms": {
     "ios": "13.0",
