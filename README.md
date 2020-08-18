@@ -1,5 +1,17 @@
-# CocoaPods
-Private CocoaPods registry for internal use
+# SCCocoaPods
+
+Standard Cyborg's private Cocoa Pods registry.
+
+Note: if you are unfamiliar with CocoaPods, this repository is a CocoaPods "registry" that serves
+to provide a versioned record of CocoaPods specs.  This repository does _not_ serve to house the
+development of those specs themselves; you probably want a separate repo for developing your
+spec or project.  FMI see notes below as well as these projects, which are simple CocoaPods 
+wrappers around existing open source C/C++ projects:
+ * https://github.com/StandardCyborg/LibArchiveCocoa
+ * https://github.com/StandardCyborg/FMTCocoa
+ * https://github.com/StandardCyborg/GTestCppCocoa
+ * https://github.com/StandardCyborg/EigenCPPCocoa
+
 
 ## Example Use
 
